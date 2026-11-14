@@ -3,53 +3,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal website and academic notes of Luanne Mak.">
-  <title>Luanne Mak | Personal Website</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Personal website of Luanne Mak.">
+  <title>Luanne Mak — Personal Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <main class="home-card">
-    <header>
-      <h1>Hello, This is Luanne 👋</h1>
-      <p class="subtitle">
-        Welcome to my little corner of the web.
-      </p>
-      <p class="bio">
-        Mathematics • Computer Science • Statistics
-      </p>
-    </header>
+<body class="portfolio-page">
 
-    <section class="links">
-      <a
-        href="https://github.com/luannemhy-pixel"
-        class="link-btn"
-        target="_blank"
-        rel="noopener noreferrer">
-        GitHub Projects
+  <div class="site-shell">
+
+    <!-- Navigation -->
+    <nav class="site-nav">
+      <a href="index.html" class="site-logo">
+        Luanne Mak<span>.</span>
       </a>
 
-      <a href="notes.html" class="link-btn">
-        📚 My Course Notes
-      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="notes.html">Notes</a>
+        <a href="https://github.com/luannemhy-pixel"
+           target="_blank"
+           rel="noopener noreferrer">GitHub</a>
+      </div>
+    </nav>
 
-      <a
-        href="https://www.linkedin.com/in/luanne-mak-a86003248/"
-        class="link-btn"
-        target="_blank"
-        rel="noopener noreferrer">
-        LinkedIn
-      </a>
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <p class="hero-label">
+          PERSONAL WEBSITE / ACADEMIC NOTES
+        </p>
 
-      <a href="mailto:luannemhy@gmail.com" class="link-btn">
-        Contact Me
-      </a>
-    </section>
+        <h1>
+          Hello, I'm <span>Luanne.</span>
+        </h1>
 
-    <footer class="home-footer">
-      © 2026 Luanne Mak
+        <p class="hero-description">
+          A student interested in mathematics,
+          computer science, and statistics.
+          I enjoy exploring ideas, solving problems,
+          and documenting what I learn.
+        </p>
+
+        <div class="hero-actions">
+          <a href="notes.html" class="primary-btn">
+            Explore my notes ↗
+          </a>
+
+          <a href="https://github.com/luannemhy-pixel"
+             class="secondary-btn"
+             target="_blank"
+             rel="noopener noreferrer">
+            View GitHub ↗
+          </a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="content-section">
+        <div class="section-heading">
+          <span class="section-number">01 /</span>
+          <h2>About me</h2>
+        </div>
+
+        <p class="about-text">
+          I'm an undergraduate student at the
+          University of Toronto, studying mathematics,
+          computer science, and statistics.
+
+          This website is a space for my academic notes,
+          personal projects, and ideas I'm exploring.
+        </p>
+      </section>
+
+      <!-- Course Notes -->
+      <section class="content-section">
+        <div class="section-heading">
+          <span class="section-number">02 /</span>
+          <h2>Course notes</h2>
+        </div>
+
+        <p class="section-intro">
+          A growing collection of lecture notes,
+          proofs, and mathematical explorations.
+        </p>
+
+        <div class="preview-grid">
+
+          <a href="mat158.html" class="preview-card">
+            <span class="preview-category">
+              REAL ANALYSIS
+            </span>
+            <h3>MAT158</h3>
+            <p>Analysis I</p>
+            <span class="preview-arrow">↗</span>
+          </a>
+
+          <a href="mat237.html" class="preview-card">
+            <span class="preview-category">
+              MULTIVARIABLE CALCULUS
+            </span>
+            <h3>MAT237</h3>
+            <p>Multivariable Calculus</p>
+            <span class="preview-arrow">↗</span>
+          </a>
+
+        </div>
+
+        <a href="notes.html" class="text-link">
+          View all course notes →
+        </a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <span>© 2026 Luanne Mak</span>
+
+      <div class="footer-links">
+        <a href="https://github.com/luannemhy-pixel">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/luanne-mak-a86003248/">
+          LinkedIn
+        </a>
+      </div>
     </footer>
-  </main>
+
+  </div>
 </body>
 </html>
+
